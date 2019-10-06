@@ -78,7 +78,7 @@ textarea#password {
 /* Buttons */
 #generate {
     margin-left:75px;
-    margin-top: 5px; 
+    margin-top: 15px; 
     font-size: 18px;
     padding: 10px;
     border-radius: 15px;
@@ -92,11 +92,4 @@ textarea#password {
     border-radius: 15px;
     background-color: #0094fe;
     color: white;
-}
-
-/* Conditions */
-.check-box {
-    font-size: 12px;
-    margin-left: 30px;
-    margin-top: 10px;
 }
