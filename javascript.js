@@ -1,11 +1,11 @@
 
 //Define variables
-let greeting = alert("Welcome to the Password Generator!");
-let passLength = prompt ("How long would you like your password to be? For security, please choose from 8 - 128 characters long. (Use only numerical values)");
-let userNumChar = prompt ("Would you like to have numbers in your password? Use Y or N");
-let userLowChar = prompt ("Would you like to have lowercase characters in your password? Use Y or N");
-let userUpChar = prompt ("Would you like to have uppercase characters in your password? Use Y or N");
-let userSpecialChar = prompt ("Would you like to have special characters in your password? Use Y or N");
+// let greeting = alert("Welcome to the Password Generator!");
+// let passLength = prompt ("How long would you like your password to be? For security, please choose from 8 - 128 characters long. (Use only numerical values)");
+// let userNumChar = prompt ("Would you like to have numbers in your password? Use Y or N");
+// let userLowChar = prompt ("Would you like to have lowercase characters in your password? Use Y or N");
+// let userUpChar = prompt ("Would you like to have uppercase characters in your password? Use Y or N");
+// let userSpecialChar = prompt ("Would you like to have special characters in your password? Use Y or N");
 let generatePass = document.querySelector("#generate");
 let password = "";
 

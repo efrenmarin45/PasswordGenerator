@@ -19,6 +19,7 @@ header {
     border-radius: 3px;
     background-color: #ffffff;
     box-shadow: 1px 1px 5px lightgrey, -1px 1px 5px lightgrey;
+    margin-top: 10%;
 }
 
 .title-generate {
