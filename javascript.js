@@ -6,14 +6,18 @@
 // let userLowChar = prompt ("Would you like to have lowercase characters in your password? Use Y or N");
 // let userUpChar = prompt ("Would you like to have uppercase characters in your password? Use Y or N");
 // let userSpecialChar = prompt ("Would you like to have special characters in your password? Use Y or N");
+var userPass = document.querySelector("#password");
 let generatePass = document.querySelector("#generate");
+let copyPass = document.querySelector("#copy");
 let password = "";
 
+
 //Array of paramenters
-var numChar = (1234567890);
-var lowChar = ('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');
-var upChar = ('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
-var specialChar = ('!','@','#','$','%','^','&','*');
+var numbers = '1234567890';
+var lowChar = 'abcdefghijklmnopqrstuvwxyz';
+var upChar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var specialChar = '!@#$%^&*';
+var selectedPass = [];
 
 // Testing to see that variables are successful
 console.log(passLength);
@@ -21,6 +25,15 @@ console.log(userSpecialChar);
 console.log(userNumChar);
 console.log(userLowChar);
 console.log(userUpChar);
+
+
+function startPass (){
+    var passArea = document.getElementById("#password");
+    passArea.innerHTML = "How long would you like your password to be? For security, please choose from 8 - 128 characters long.";
+    
+    var userSelect = document.createElement('') 
+}
+
 
 
 
@@ -65,3 +78,6 @@ return this.password;
 }
 );
 console.log(this.password);
+
+
+
