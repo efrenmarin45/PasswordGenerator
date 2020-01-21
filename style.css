@@ -54,6 +54,17 @@ textarea#password {
     border-radius: 4px;
 }
 
+#passLengthInput {
+    align-content: center;
+    width: 435px;
+    height: 100px;
+    background-color:white;
+    border-style: solid;
+    border-radius: 4px;
+    font-size: 32px;
+    text-align: center;
+}
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #a4998d;
     text-align: center;
@@ -92,6 +103,16 @@ textarea#password {
     padding: 10px;
     border-radius: 15px;
     background-color: #0094fe;
+    color: white;
+}
+
+#nextBtn {
+    margin-left:75px;
+    margin-top: 15px; 
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #db3920;
     color: white;
 }
 
