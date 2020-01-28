@@ -94,17 +94,61 @@ textarea#password {
     font-size: 18px;
     padding: 10px;
     border-radius: 15px;
-    background-color: #db3920;
+    background-color: darkred;
     color: white;
+    box-shadow: 0 2px 2px 0 grey;
 }
+#generate:hover {
+    margin-left:75px;
+    margin-top: 15px; 
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    box-shadow: 0 5px 5px 0 grey;
+}
+#generate:active {
+    margin-left:75px;
+    margin-top: 15px; 
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    box-shadow: 0 5px 5px 0 grey;
+    transform: translateY(4px);
+}
+
+
 
 #copy {
     font-size: 18px;
     padding: 10px;
     border-radius: 15px;
+    background-color: navy;
+    color: white;
+    box-shadow: 0 2px 2px 0 grey;
+}
+#copy:hover {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
     background-color: #0094fe;
     color: white;
+    box-shadow: 0 5px 5px 0 grey;
 }
+#copy:active {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #0094fe;
+    color: white;
+    box-shadow: 0 5px 5px 0 grey;
+    transform: translateY(4px);
+}
+
+
 
 #nextBtn {
     margin-left:75px;
@@ -112,10 +156,36 @@ textarea#password {
     font-size: 18px;
     padding: 10px;
     border-radius: 15px;
-    background-color: #db3920;
+    background-color: darkred;
     color: white;
+    box-shadow: 0 2px 2px 0 grey;
+    align-content: center;
 }
+#nextBtn:hover {
+    margin-left:75px;
+    margin-top: 15px; 
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    box-shadow: 0 5px 5px 0 grey;
+}
+#nextBtn:active {
+    margin-left:75px;
+    margin-top: 15px; 
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    box-shadow: 0 5px 5px 0 grey;
+    transform: translateY(4px);
+}
+
 
 .hide {
     display: none;
 }
+
+ /* 
