@@ -1,10 +1,13 @@
+// Variables
 var passField = document.querySelector("#text-field");
 var generatePass = document.querySelector("#generate");
 
-generatePass.addEventListener('click', function(){
-    // var startPass = document.getElementById('text-field');
-    // startPass.setAttribute('class', 'hide');
 
+//Array to hold user input
+var passComponents = [];
+
+
+generatePass.addEventListener('click', function(){
     var hideButtons = document.getElementById('buttons');
     hideButtons.setAttribute('class', 'hide');
 
@@ -27,4 +30,11 @@ function passLength(){
 
     passField.appendChild(passLengthInput);
     passField.appendChild(nextBtn);
+
+    document.getElementById('nextBtn').addEventListener('click', function(){
+        var userLength = passLengthInput.value;
+        passComponents.push(userLength);
+        console.log(passComponents);
+    })
 }
+

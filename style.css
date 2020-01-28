@@ -150,8 +150,9 @@ textarea#password {
 
 
 
+
 #nextBtn {
-    margin-left:75px;
+    margin-left: 190px;
     margin-top: 15px; 
     font-size: 18px;
     padding: 10px;
@@ -159,10 +160,10 @@ textarea#password {
     background-color: darkred;
     color: white;
     box-shadow: 0 2px 2px 0 grey;
-    align-content: center;
+    
 }
 #nextBtn:hover {
-    margin-left:75px;
+    margin-left: 190px;
     margin-top: 15px; 
     font-size: 18px;
     padding: 10px;
@@ -172,7 +173,7 @@ textarea#password {
     box-shadow: 0 5px 5px 0 grey;
 }
 #nextBtn:active {
-    margin-left:75px;
+    margin-left: 190px;
     margin-top: 15px; 
     font-size: 18px;
     padding: 10px;
@@ -182,6 +183,8 @@ textarea#password {
     box-shadow: 0 5px 5px 0 grey;
     transform: translateY(4px);
 }
+
+
 
 
 .hide {
