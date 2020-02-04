@@ -46,7 +46,6 @@ textarea {
 }
 
 textarea#password {
-    align-content: center;
     width: 435px;
     height: 100px;
     background-color:white;
@@ -153,18 +152,17 @@ textarea#password {
 
 #nextBtn {
     margin-left: 190px;
-    margin-top: 15px; 
+    margin-top: 25px; 
     font-size: 18px;
     padding: 10px;
     border-radius: 15px;
     background-color: darkred;
     color: white;
     box-shadow: 0 2px 2px 0 grey;
-    
 }
 #nextBtn:hover {
     margin-left: 190px;
-    margin-top: 15px; 
+    margin-top: 25px; 
     font-size: 18px;
     padding: 10px;
     border-radius: 15px;
@@ -174,7 +172,42 @@ textarea#password {
 }
 #nextBtn:active {
     margin-left: 190px;
-    margin-top: 15px; 
+    margin-top: 25px; 
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    box-shadow: 0 5px 5px 0 grey;
+    transform: translateY(4px);
+}
+
+
+
+
+#redo {
+    margin-left:75px;
+    margin-top: 95px; 
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: darkred;
+    color: white;
+    box-shadow: 0 2px 2px 0 grey;
+}
+#redo:hover {
+    margin-left:75px;
+    margin-top: 95px; 
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    box-shadow: 0 5px 5px 0 grey;
+}
+#redo:active {
+    margin-left:75px;
+    margin-top: 95px; 
     font-size: 18px;
     padding: 10px;
     border-radius: 15px;
@@ -190,5 +223,3 @@ textarea#password {
 .hide {
     display: none;
 }
-
- /* 
