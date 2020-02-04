@@ -1,7 +1,11 @@
 // Variables
 let passField = document.querySelector("#text-field");
 let generatePass = document.querySelector("#generate");
-let restartPass = document.getElementById('redo'); 
+let redoPass = document.querySelector("#redo");
+let PasswordCopy = document.getElementById('copy');
+let modal = document.getElementById("copyModal");
+let span = document.getElementsByClassName("close")[0];
+
 
 
 //Array to hold user input
@@ -46,12 +50,12 @@ function freshPass(){
 
 
 function passLength(){
-    document.getElementById('text-field').innerText = 'Please choose a password length between 1-128 characters';
+    document.getElementById('text-field').innerText = 'Please choose a password length between 1-45 characters';
     let passLengthInput = document.createElement('textarea');
     let nextBtn = document.createElement('button');
 
     passLengthInput.name = 'length';
-    passLengthInput.maxLength = '3';
+    passLengthInput.maxLength = '2';
     passLengthInput.cols = '5';
     passLengthInput.rows = '5';
 
@@ -325,26 +329,44 @@ function createPass(){
             let error = document.getElementById('text-field');
             error.innerHTML = "Matrix Error: You must pick at least one option to continue. Don't worry it's not like we're offering a red or blue pill.";
         }
-        
-        let redoBtn = document.createElement('button');
-        let copyBtn = document.createElement('button');
-
-        redoBtn.setAttribute('id', 'redo');
-        redoBtn.innerHTML = 'Redo Password';
-        passField.appendChild(redoBtn);
-
-        copyBtn.setAttribute('id', 'copy')
-        copyBtn.innerHTML = 'Copy to Clipboard';
-        passField.appendChild(copyBtn);
-
-        restartPass.addEventListener('click', function(){
-            passLength();
-        })
-        // generatePass.addEventListener('click', function(){
-        //     let revealBtn = document.getElementById('button');
-        //     revealBtn.createElement('class', 'hide');
-        //     appendChild(revealBtn);
-        // })
-
     }
+
+    let redoBtn = document.createElement('button');
+    let copyBtn = document.createElement('button');
+
+    redoBtn.setAttribute('id', 'redo');
+    redoBtn.innerHTML = 'Redo Password';
+    passField.appendChild(redoBtn);
+
+    copyBtn.setAttribute('id', 'copy')
+    copyBtn.innerHTML = 'Copy to Clipboard';
+    passField.appendChild(copyBtn);
+
+    copyBtn.onclick = function() {
+    modal.style.display = "block";
+    }
+  
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+  
+    window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      }
+    }
+
+    // copyPass();
+
+    redoBtn.addEventListener('click', function(){
+        freshPass();
+        passLength();
+    })
 }
+
+// function copyPass() {
+//     let copyText = document.getElementById("text-field");
+//     copyText.select();
+//     copyText.setSelectionRange(0, 99999)
+//     document.execCommand("copy");
+//   }

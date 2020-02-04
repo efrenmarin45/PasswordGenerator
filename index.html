@@ -24,21 +24,21 @@
           </div>
           <div id="buttons">
             <button id="generate">Generate Password</button>
-            <button id="copy">Copy to Clipboard</button><br>
+            <button id="copy" onclick="copyPass()">Copy to Clipboard</button><br>
+          </div>
+          <div id="copyModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Some text in the Modal..</p>
+            </div>
+          
           </div>
       </div>
     </div>
+    <!-- <div id="redo" class="hide">
+      <button>Redo Password</button>
+    </div> -->
 
-    <!-- Password length -->
-    <!-- <div id="passLength" class="hide">
-        <div class="row">
-            <div class="password-widget">
-                <div class="title-generate">
-                    <h1>Password Generator</h1>
-                </div>
-                <div id="borderline"></div>
-                <p>Test</p>
-        </div> -->
     
   <script src="javascript.js"></script>
   </body>
