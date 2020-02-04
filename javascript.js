@@ -50,7 +50,7 @@ function freshPass(){
 
 
 function passLength(){
-    document.getElementById('text-field').innerText = 'Please choose a password length between 1-45 characters';
+    document.getElementById('text-field').innerText = 'Please choose a password length between 1-45 characters ';
     let passLengthInput = document.createElement('textarea');
     let nextBtn = document.createElement('button');
 
