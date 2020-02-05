@@ -1,13 +1,29 @@
-# unit-3-passwordGenerator
+# Password Generator
 
-This project is meant to show a randomized password generator. Giving the user the option to choose what parameters they would like in their password. This password generator is not meant to be secure but rather demonstrate working knowledge with Javascript and manipulating the DOM.
+## How to use
+1) Download files
+2) Run index.html in browser
+3) Click 'Generate Password'
+4) Follow prompts and your password will be generated
 
-Being able to go through and try different iterations of logic was able to show me what works and what doesn't. Using the console to constantly check helped to ensure functionality.
 
-The current build of this project is not complete and is a WIP(Work in Progress).
+## Purpose
+This program takes in several parameters including length, special characters, numbers, and upper or lowecase letters to create a random password. Once a password has been generated, you can click on redo and it will allow you to try again.
 
-Only using HTML, CSS, and Javascript for the page.
+
+## Demo
+![Code Quiz Demo](assets/codequiz_demo.gif)
+
+
+## Project Status
+The project scope was a lot bigger and started coming across feature creep. I reevaluated and worked on making sure the project was complete and trimmed out some features.
+
+
+## Reflection
+This was a very fun and challenging project to work on because there are so many different ways to tackle it. While I feel like the program is functional and works as intended, I do want to add more features down the road. 
+
+
+[Demo of Code Quiz](https://efrenmarin45.github.io/CodeQuiz/)
+
 
 No licenses. Creative purposes only. @Efrenmarin45 on GitHub.
-
-efrenmarin45/unit-3-passwordGenerator
