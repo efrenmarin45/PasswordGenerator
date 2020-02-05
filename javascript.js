@@ -5,7 +5,7 @@ let redoPass = document.querySelector("#redo");
 let PasswordCopy = document.getElementById('copy');
 let modal = document.getElementById("copyModal");
 let span = document.getElementsByClassName("close")[0];
-
+let copyBtn = document.querySelector("#copy");
 
 
 //Array to hold user input
@@ -32,7 +32,6 @@ let numLo = '0123456789abcdefghijklmnopqrstuvwxyz';
 let upLo = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
 
-
 //Hides initial screen when user clicks on Generate Password
 generatePass.addEventListener('click', function(){
     let hideButtons = document.getElementById('buttons');
@@ -48,9 +47,9 @@ function freshPass(){
 }
 
 
-
+//Take in password length
 function passLength(){
-    document.getElementById('text-field').innerText = 'Please choose a password length between 1-45 characters ';
+    document.getElementById('text-field').innerText = 'Please choose a password length between 8-45 characters ';
     let passLengthInput = document.createElement('textarea');
     let nextBtn = document.createElement('button');
 
@@ -76,7 +75,7 @@ function passLength(){
 }
 
 
-
+//Special Characters in password
 function specialPass(){
 
     //Asking user if they would like Special Characters in their password
@@ -121,7 +120,7 @@ function specialPass(){
 }
 
 
-
+//Numbers in password
 function numberPass(){
 
     //Asking user if they would like numbers in their password
@@ -165,7 +164,7 @@ function numberPass(){
 }
 
 
-
+//Lowercase in password
 function lowerPass() {
     document.getElementById('text-field').innerText = 'Would you like to use lowercase letters?';
     let nextBtn = document.createElement('button');
@@ -207,7 +206,7 @@ function lowerPass() {
 }
 
 
-
+//Uppercase in password
 function upperPass() {
     document.getElementById('text-field').innerText = 'Would you like to use uppercase letters?';
     let nextBtn = document.createElement('button');
@@ -249,7 +248,7 @@ function upperPass() {
 }
 
 
-
+//Generate password
 function createPass(){
     let password = '';
     let passwordLength = parseInt(passComponents[0]);
@@ -331,42 +330,16 @@ function createPass(){
         }
     }
 
+
+    //Redo button 
     let redoBtn = document.createElement('button');
-    let copyBtn = document.createElement('button');
 
     redoBtn.setAttribute('id', 'redo');
     redoBtn.innerHTML = 'Redo Password';
     passField.appendChild(redoBtn);
-
-    copyBtn.setAttribute('id', 'copy')
-    copyBtn.innerHTML = 'Copy to Clipboard';
-    passField.appendChild(copyBtn);
-
-    copyBtn.onclick = function() {
-    modal.style.display = "block";
-    }
-  
-    span.onclick = function() {
-    modal.style.display = "none";
-    }
-  
-    window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-      }
-    }
-
-    // copyPass();
 
     redoBtn.addEventListener('click', function(){
         freshPass();
         passLength();
     })
 }
-
-// function copyPass() {
-//     let copyText = document.getElementById("text-field");
-//     copyText.select();
-//     copyText.setSelectionRange(0, 99999)
-//     document.execCommand("copy");
-//   }
