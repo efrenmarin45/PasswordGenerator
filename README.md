@@ -12,7 +12,7 @@ This program takes in several parameters including length, special characters, n
 
 
 ## Demo
-![Code Quiz Demo](assets/codequiz_demo.gif)
+![Password Generator Demo](assets/password_generator.gif)
 
 
 ## Project Status
@@ -23,7 +23,7 @@ The project scope was a lot bigger and started coming across feature creep. I re
 This was a very fun and challenging project to work on because there are so many different ways to tackle it. While I feel like the program is functional and works as intended, I do want to add more features down the road. 
 
 
-[Demo of Code Quiz](https://efrenmarin45.github.io/CodeQuiz/)
+[Demo of Password Generator](https://efrenmarin45.github.io/PasswordGenerator/)
 
 
 No licenses. Creative purposes only. @Efrenmarin45 on GitHub.
